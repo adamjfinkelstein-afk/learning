@@ -30,4 +30,8 @@ public class Book {
     public void returnBook() {
         available = true;
     }
+
+    public String toString() {
+        return title + " by " + author;
+    }
 }

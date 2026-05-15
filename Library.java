@@ -7,7 +7,14 @@ public class Library {
         System.out.println(book2.getTitle());
         System.out.println(book1.isAvailable());
 
-        book1.checkout();
+        // book1.checkout();
+        // System.out.println(book1.isAvailable());
+
+        Member member1 = new Member("Adam", "London" ); 
+        System.out.println(member1.getLibraryCardID());
+
+        member1.checkoutBook(book1);
+        System.out.println(member1.getBorrowedBooks());
         System.out.println(book1.isAvailable());
     }
 }
