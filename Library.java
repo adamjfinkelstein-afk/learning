@@ -16,5 +16,10 @@ public class Library {
         member1.checkoutBook(book1);
         System.out.println(member1.getBorrowedBooks());
         System.out.println(book1.isAvailable());
+
+        EBook ebook1 = new EBook("The Hobbit", "J.R.R. Tolkien", 310, 2.5 );
+        System.out.println(ebook1.getTitle());
+        System.out.println(ebook1.getFileSizeMB());
+        System.out.println(ebook1.isAvailable());
     }
 }
