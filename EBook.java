@@ -14,8 +14,12 @@ public class EBook extends Book implements Downloadable {
         System.out.println( "Downloading " + getTitle() + " (" + fileSizeMB + "MB)...");
     }
 
+    public String getFormat() {
+        return "EPUB";
+    }
+
     @Override
     public String toString() {
-        return super.toString() + " - " + fileSizeMB + "MB";
+        return super.toString() + " - " + fileSizeMB + "MB (" + getFormat() + ")";
     }
 }
