@@ -15,7 +15,7 @@ public class EBook extends Book implements Downloadable {
     }
 
     public String getFormat() {
-        return "EPUB";
+        return "PDF";
     }
 
     @Override
